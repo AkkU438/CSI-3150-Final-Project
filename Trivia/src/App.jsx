@@ -59,7 +59,7 @@ export default function App() {
       setCurrentQuestionIndex(0);
       setScore(0);
       setGameState('QUIZ_ACTIVE'); // Transition state [cite: 35]
-    } catch (err) {
+    } catch (_err) {
       setError("News currently unavailable, please try again later"); // Fallback error style [cite: 57]
     } finally {
       setLoading(false);
