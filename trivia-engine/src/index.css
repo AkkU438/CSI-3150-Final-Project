@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-deep:      #05050f;
+  --bg-card:      #0d0d1a;
+  --bg-card-2:    #131324;
+  --neon-cyan:    #00f5ff;
+  --neon-pink:    #ff006e;
+  --neon-gold:    #ffd700;
+  --neon-green:   #39ff14;
+  --neon-red:     #ff2244;
+  --neon-purple:  #b44fff;
+  --text-primary: #e8eaf0;
+  --text-muted:   #7a7f9a;
+  --border:       rgba(0, 245, 255, 0.15);
+  --glow-cyan:    0 0 8px rgba(0, 245, 255, 0.6), 0 0 24px rgba(0, 245, 255, 0.2);
+  --glow-pink:    0 0 8px rgba(255, 0, 110, 0.6), 0 0 24px rgba(255, 0, 110, 0.2);
+  --glow-gold:    0 0 8px rgba(255, 215, 0, 0.6), 0 0 24px rgba(255, 215, 0, 0.2);
+  --glow-green:   0 0 8px rgba(57, 255, 20, 0.7), 0 0 24px rgba(57, 255, 20, 0.3);
+  --glow-red:     0 0 8px rgba(255, 34, 68, 0.7), 0 0 24px rgba(255, 34, 68, 0.3);
+  --radius:       8px;
+  --transition:   0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  border: none;
+  outline: none;
+}
+
+input, select {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--neon-cyan); border-radius: 3px; }
+
+/* Utility animations */
+@keyframes flash-green {
+  0%   { background-color: var(--bg-deep); }
+  25%  { background-color: rgba(57, 255, 20, 0.18); }
+  50%  { background-color: rgba(57, 255, 20, 0.10); }
+  100% { background-color: var(--bg-deep); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  15%       { transform: translateX(-8px); }
+  30%       { transform: translateX(8px); }
+  45%       { transform: translateX(-6px); }
+  60%       { transform: translateX(6px); }
+  75%       { transform: translateX(-3px); }
+  90%       { transform: translateX(3px); }
+}
+
+@keyframes pulse-in {
+  0%   { transform: scale(0.92); opacity: 0; }
+  100% { transform: scale(1);    opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55%                           { opacity: 0.4; }
+}
+
+.flash-green-anim { animation: flash-green 0.6s ease; }
+.shake-anim       { animation: shake 0.5s ease; }
