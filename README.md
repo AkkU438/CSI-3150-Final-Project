@@ -3,9 +3,8 @@
 
 Name: Aditya Kurup
 Project Option: Option 3
-**Live URL:** `csi-3150-final-project-pp.vercel.app
-` *(replace after deployment)*
-**GitHub:** `https://github.com/AkkU438/CSI-3150-Final-Project` *(replace with your repo)*
+**Live URL:** `csi-3150-final-project-pp.vercel.app`
+**GitHub:** `https://github.com/AkkU438/CSI-3150-Final-Project`
 
 
 ---
