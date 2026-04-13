@@ -6,6 +6,7 @@ Project Option: Option 3
 **Live URL:** `https://grand-master-trivia-engine.vercel.app` *(replace after deployment)*
 **GitHub:** `https://github.com/AkkU438/CSI-3150-Final-Project` *(replace with your repo)*
 
+
 ---
 
 ## Overview
