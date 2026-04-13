@@ -1,10 +1,11 @@
+
 # Grand Master Trivia Engine
 
-> CSI 3150 W26 — Final Project | Option 3
-
+Name: Aditya Kurup
+Project Option: Option 3
 **Live URL:** `https://grand-master-trivia-engine.vercel.app` *(replace after deployment)*
+**GitHub:** `https://github.com/AkkU438/CSI-3150-Final-Project` *(replace with your repo)*
 
-**GitHub:** `https://github.com/YOUR_USERNAME/grand-master-trivia-engine` *(replace with your repo)*
 
 ---
 
@@ -123,10 +124,3 @@ npm run build
 The app runs on `http://localhost:3000` by default.
 
 ---
-
-## Deployment (Vercel)
-
-1. Push your code to a GitHub repository.
-2. Go to [vercel.com](https://vercel.com) and import the repository.
-3. Vercel auto-detects Create React App — click **Deploy**.
-4. Your live URL will be `https://your-project-name.vercel.app`.
